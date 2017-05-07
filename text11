@@ -1,0 +1,59 @@
+<!-- 任务11 总结字符串和数组常用函数
+总结字符串和数组常用函数，要求：1、说明使用场景。2、说明各函数的功能、参数、返回值。 -->
+<?php
+//字符串
+	//输出字符串
+	echo "string";
+	print();
+
+	//格式化输出字符串
+	printf();
+
+	//返回字符串中的字符个数
+	strlen($str);
+
+	//清除空白符
+	trim($str[,$toDel])//删除字符串开头和结尾的空字符
+	ltrim($str[,$toDel])//删除字符串开始的空白字符
+	rtrim($str[,$toDel])//删除字符串结尾的空白字符
+
+	//比较字符串
+	strcmp(str1, str2)//如果str1小于str2返回一个负数，如果一个str1大于str2返回一个正数，如果两数相等返回0
+	strcasecmp(str1, str2)//先将str1\str2转换成小写的再进行比较
+
+	//查找字串
+	strpos($str,$toFind)//返回被查找字符串第一次出现的位置
+	strrpos($str,$toFind)//返回被查找字符串最后一次出现的位置
+	strstr($str,$toFind)//返回toFind第一次出现到str结尾的字符串
+	strchr()同strstr()
+
+	//替换字符串
+	str_repeat($search, $replace,$str)//str中的search全部替换为replace,返回str
+
+	//大小写在转换
+	strtolower(str)//将字符串中的英文全部转换为小写
+	strtoupper(string)//将字符串中的英文全部转换成大写
+
+	//截取字符串
+	substr($str,$start[,$length])//返回从start位置开始长度为length长的字符串
+
+	explode(delimiter, string)//将string按delimiter分割，并将每一部分存在数组中返回
+	implode(glue, pieces)//将一个数组中的每个分量以glue链接成一个字符串
+	substr_count(haystack, needle)//在haystack中找出needle出现的次数
+//数组
+	//创建数组函数
+	array()
+	range(low, high)//创建有规律的数组，只能创建索引数组
+
+	print_r(expression)//以"键—值"对形式显示数组信息
+	var_dump(expression)//以"键—值"对形式显示数组信息，同时显示键值的数据类型
+	count(var)//返回数组长度
+
+	//数组排序
+	sort(array)//按值升序排列数组
+	rsort(array)//按值降序排列数组
+	ksort(array)//按键升序排列数组
+	krsort(array)//按键降序跑列数组
+?>
+
+
